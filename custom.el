@@ -6,7 +6,7 @@
  '(custom-enabled-themes (quote (wombat)))
  '(package-selected-packages
    (quote
-    (nyan-mode org company-irony irony dockerfile-mode company company-go go-eldoc utop go-mode magit rust-mode)))
+    (projectile nyan-mode org company-irony irony dockerfile-mode company company-go go-eldoc utop go-mode magit rust-mode)))
  '(safe-local-variable-values
    (quote
     ((eval defun spot/execute-test nil "execute the current file through ../run"
