@@ -1,9 +1,10 @@
-;; OCaml stuff
+;; Load Tuareg installed from OPAM
 (load
  (expand-file-name
   ".opam/default/share/emacs/site-lisp/tuareg-site-file"
   my-homedir))
 
+;; Load Merlin
 (let ((opam-share
        (ignore-errors (car (process-lines "opam" "config" "var" "share")))))
   (when (and opam-share (file-directory-p opam-share))
@@ -16,6 +17,7 @@
     ;; Use opam switch to lookup ocamlmerlin binary
     (setq merlin-command 'opam)))
 
+;; Setup utop
 (setq utop-command "opam config exec -- utop -emacs")
 (setq utop-edit-command nil)
 

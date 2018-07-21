@@ -7,6 +7,7 @@
 (add-to-list 'package-archives
              '("org" . "https://orgmode.org/elpa/") t)
 
+;; Prioritize stable and org repo over gnu/melpa unstable
 (setq package-archive-priorities
       '(("melpa-stable" . 10)
         ("org" . 10)
@@ -17,6 +18,7 @@
 (when (not package-archive-contents)
     (package-refresh-contents))
 
+;; Install packages manually installed by user
 (package-install-selected-packages)
 
 (provide 'init-package)
