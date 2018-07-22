@@ -3,9 +3,6 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
-(defvar my-homedir (getenv "HOME")
-  "User's home directory")
-
 ;; File that stores custom variables
 (setq custom-file
       (expand-file-name "custom.el" user-emacs-directory))
@@ -15,6 +12,9 @@
 (defvar my-config-dir
   (expand-file-name "config" user-emacs-directory))
 (add-to-list 'load-path my-config-dir)
+
+(defvar my-homedir (getenv "HOME")
+  "User's home directory")
 
 (require 'init-package)
 (require 'init-base)
