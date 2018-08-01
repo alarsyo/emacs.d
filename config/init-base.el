@@ -11,7 +11,7 @@
 (setq mouse-wheel-follow-mouse t)
 
 ;; Line numbers on left side of buffer
-(setq display-line-numbers-mode t)
+(global-display-line-numbers-mode t)
 
 ;; Display column number as well
 (setq column-number-mode t)
