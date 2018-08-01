@@ -9,7 +9,10 @@
     (markdown-mode auctex-latexmk auctex helm projectile nyan-mode org company-irony irony dockerfile-mode company company-go go-eldoc utop go-mode magit rust-mode)))
  '(safe-local-variable-values
    (quote
-    ((eval defun spot/execute-test nil "execute the current file through ../run"
+    ((eval local-set-key
+           (kbd "C-c C-c")
+           (function spot/execute-test))
+     (eval defun spot/execute-test nil "execute the current file through ../run"
            (interactive)
            (shell-command
             (concat "cd ..; ./run "
