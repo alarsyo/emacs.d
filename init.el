@@ -22,4 +22,5 @@
 (require 'init-magit)
 (require 'init-projectile)
 (require 'init-ocaml)
+(require 'init-golang)
 (require 'init-auctex)
