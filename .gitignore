@@ -1,3 +1,7 @@
 auto-save-list
 elpa
 projectile-bookmarks.eld
+session.*
+bookmarks
+recentf
+custom.el
