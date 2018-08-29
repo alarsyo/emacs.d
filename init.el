@@ -21,6 +21,7 @@
 (require 'init-look)
 (require 'init-magit)
 (require 'init-projectile)
+(require 'init-orgmode)
 (require 'init-ocaml)
 (require 'init-golang)
 (require 'init-auctex)
