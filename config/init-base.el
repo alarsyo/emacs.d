@@ -1,5 +1,6 @@
 ;; Only display lines that are too long
 (setq whitespace-style '(face lines-tail))
+(global-whitespace-mode t)
 
 ;; Don't use tabs for indentation
 (setq-default indent-tabs-mode nil)
