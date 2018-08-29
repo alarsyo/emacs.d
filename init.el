@@ -18,6 +18,7 @@
 
 (require 'init-package)
 (require 'init-base)
+(require 'init-evil)
 (require 'init-look)
 (require 'init-magit)
 (require 'init-projectile)
