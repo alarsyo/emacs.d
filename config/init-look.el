@@ -1,3 +1,5 @@
+(load-theme 'wombat t)
+
 ;; Setup nyan cat progress bar
 (setq nyan-animate-nyancat t)
 (setq nyan-wavy-trail t)
