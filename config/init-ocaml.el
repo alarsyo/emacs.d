@@ -1,8 +1,9 @@
 ;; Load Tuareg installed from OPAM
-(load
- (expand-file-name
-  ".opam/default/share/emacs/site-lisp/tuareg-site-file"
-  my-homedir))
+(let ((tuareg-file (expand-file-name
+                    ".opam/default/share/emacs/site-lisp/tuareg-site-file"
+                    my-homedir)))
+  (when (file-exists-p tuareg-file)
+    (load tuareg-file)))
 
 ;; Load Merlin
 (let ((opam-share
