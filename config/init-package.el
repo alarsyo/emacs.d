@@ -1,4 +1,11 @@
 (require 'package)
+
+(setq my-package-list
+      '(evil magit evil-magit
+        nyan-mode projectile org
+        auctex auctex-latexmk
+        go-mode))
+
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (add-to-list 'package-archives
@@ -18,7 +25,9 @@
 (when (not package-archive-contents)
     (package-refresh-contents))
 
-;; Install packages manually installed by user
-(package-install-selected-packages)
+;; Install packages from install list
+(dolist (package my-package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
 
 (provide 'init-package)
