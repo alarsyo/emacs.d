@@ -26,5 +26,6 @@
 (require 'init-projectile)
 (require 'init-orgmode)
 (require 'init-ocaml)
+(require 'init-c)
 (require 'init-golang)
 (require 'init-auctex)
