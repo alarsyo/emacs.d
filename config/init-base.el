@@ -1,5 +1,8 @@
 ;; Only display lines that are too long
-(setq whitespace-style '(face lines-tail))
+(setq whitespace-style '(face ; show...
+                         tabs tab-mark
+                         lines-tail
+                         trailing))
 (global-whitespace-mode t)
 
 ;; Don't use tabs for indentation
