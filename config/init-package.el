@@ -3,7 +3,7 @@
 (setq my-package-list
       '(evil magit evil-magit
         base16-theme
-        nyan-mode projectile org
+        projectile org
         auctex auctex-latexmk
         go-mode))
 
