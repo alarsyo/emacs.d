@@ -1,4 +1,4 @@
-(load-theme 'wombat t)
+(load-theme 'base16-default-dark t)
 
 ;; Setup nyan cat progress bar
 (setq nyan-animate-nyancat t)
