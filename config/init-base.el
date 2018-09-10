@@ -24,4 +24,6 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
+(global-set-key (kbd "<f5>") 'compile)
+
 (provide 'init-base)
