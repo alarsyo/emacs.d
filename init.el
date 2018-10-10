@@ -20,6 +20,7 @@
 
 (require 'init-package)
 (require 'init-base)
+(require 'init-flx)
 (require 'init-evil)
 (require 'init-look)
 (require 'init-magit)
