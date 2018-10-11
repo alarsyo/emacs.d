@@ -10,6 +10,6 @@
 
 (set-face-attribute 'default nil
                     :family "Hack"
-                    :height 100)
+                    :height 105)
 
 (provide 'init-look)
