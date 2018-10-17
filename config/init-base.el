@@ -24,4 +24,6 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
+(add-hook 'prog-mode-hook #'hs-minor-mode)
+
 (provide 'init-base)
