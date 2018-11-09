@@ -1,3 +1,9 @@
+;;; init --- Base configuration file
+;;; Commentary:
+;;; This is the main configuration file
+
+;;; Code:
+
 ;; Remove toolbars as early as possible
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
@@ -16,7 +22,7 @@
 (add-to-list 'load-path my-config-dir)
 
 (defvar my-homedir (getenv "HOME")
-  "User's home directory")
+  "User's home directory.")
 
 (require 'init-package)
 (require 'init-base)
@@ -30,3 +36,6 @@
 (require 'init-c)
 (require 'init-golang)
 (require 'init-auctex)
+(require 'init-flycheck)
+
+;;; init.el ends here

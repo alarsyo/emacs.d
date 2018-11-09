@@ -4,6 +4,7 @@
       '(evil magit evil-magit
         base16-theme
         projectile org
+        flycheck
         flx-ido
         auctex auctex-latexmk
         go-mode))
