@@ -1,13 +1,21 @@
+;;; init-package --- package installation
+
+;;; Commentary:
+;;; You can add a package to install to MY-PACKAGE-LIST
+
+;;; Code:
+
 (require 'package)
 
-(setq my-package-list
+(defvar my-package-list
       '(evil magit evil-magit
         base16-theme
         projectile org
         flycheck
         flx-ido
         auctex auctex-latexmk
-        go-mode))
+        go-mode)
+      "List of packages to install.")
 
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
@@ -34,3 +42,5 @@
     (package-install package)))
 
 (provide 'init-package)
+
+;;; init-package.el ends here
